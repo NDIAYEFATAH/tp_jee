@@ -13,6 +13,7 @@ public class ToDoList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int listId;
+    private String description;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
